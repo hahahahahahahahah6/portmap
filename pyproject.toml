@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "portmap-cli"
+version = "0.1.0"
+description = "Stable names for local dev-server ports — stop guessing ports across agent sessions"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Hao Li" }]
+keywords = ["dev-server", "ports", "cli", "agents", "claude-code"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+]
+
+[project.scripts]
+portmap = "portmap:main"
+
+[project.urls]
+Homepage = "https://github.com/hahahahahahahahah6/portmap"
+
+[tool.setuptools]
+py-modules = ["portmap"]
